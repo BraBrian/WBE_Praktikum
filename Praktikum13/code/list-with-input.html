@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>List</title>
+  <script src="lib/react/react.development.js"></script>
+  <script src="lib/react/react-dom.development.js"></script>
+  <script src="lib/sjdon/sjdon.js"></script>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root"></div>
+  
+  <script>
+
+//
+//  Liste aufbauen
+//
+
+const { useState } = React
+
+
+const App = sjdon(() => { 
+  let [text, setText] = useState("")
+  let [items, setItems] = useState([])
+
+  return (
+    ["div",
+      ["p", "Da fehlt noch einiges"],
+    ] )
+})
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(
+  parseSJDON([App])
+)
+    
+  </script>
+</body>
+</html>
