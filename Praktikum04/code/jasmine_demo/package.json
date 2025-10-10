@@ -1,0 +1,15 @@
+{
+  "name": "jasmine_demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node ."
+  },
+  "author": "brian",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jasmine": "^5.12.0"
+  }
+}
